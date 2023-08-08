@@ -2,3 +2,2524 @@
 U-Boot SPL 2021.10-dirty (Jul 18 2023 - 14:36:04 +0800)
 DDR version: dc2e84f0.
 Ready for debugger connection...
+
+U-Boot SPL 2021.10-dirty (Jul 18 2023 - 14:36:04 +0800)
+DDR version: dc2e84f0.
+Ready for debugger connection...
+Use DBT FV
+FindFfsFileAndSection: DBT FV at 0x40840000
+FindFfsFileAndSection: Get firmware file section
+Use DBT FV
+FindFfsFileAndSection: DBT FV at 0x40840000
+FindFfsFileAndSection: Get firmware file section
+Device Tree at  0x40840064
+HART number: 0x4
+HART index to HART ID:
+  Index: 0 -> Hard ID: 1
+  Index: 1 -> Hard ID: 2
+  Index: 2 -> Hard ID: 3
+  Index: 3 -> Hard ID: 4
+FindAndReportEntryPoints: Entry
+FindPeiCoreImageBase: Entry
+FindFfsFileAndSection: DBT FV at 0x40400000
+FindFfsFileAndSection: (File->Type != FileType), find next FFS
+FindFfsFileAndSection: (File->Type != FileType), find next FFS
+FindFfsFileAndSection: Get firmware file section
+FindPeiCoreImageBaseInFv: PeiCoreImageBase found
+FindAndReportEntryPoints: PeCoffLoaderGetEntryPoint success: 40402240
+PeiCore: OpenSBI platform table at address: 0x40024D50
+Firmware Context is located at 0x4090FB00
+PeiCore: Set Supervisor address mode to Bare-mode.
+PeiCore: Initializing OpenSBI library for booting hart 1
+Edk2OpensbiPlatformEarlyInit: Entry
+SecPostOpenSbiPlatformEarlyInit: Set boot hart done.
+Edk2OpensbiPlatformSerialInit: Entry
+
+OpenSBI v0.9
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Edk2OpensbiPlatformIrqchipInit: Entry
+Edk2OpensbiPlatformIpiInit: Entry
+Edk2OpensbiPlatformTlbrFlushLimit: Entry
+Edk2OpensbiPlatformTimerInit: Entry
+Platform Name             : StarFive VisionFive V2
+Platform Features         : mfdeleg
+Platform HART Count       : 4
+Platform IPI Device       : aclint-mswi
+Platform Timer Device     : aclint-mtimer
+Platform Console Device   : uart8250
+Platform HSM Device       : ---
+Platform SysReset Device  : ---
+Firmware Base             : 0x40000000
+Firmware Size             : 256 KB
+Runtime SBI Version       : 0.3
+
+Edk2OpensbiPlatformDomainsInit: Entry
+Domain0 Name              : root
+Domain0 Boot HART         : 1
+Domain0 HARTs             : 1*,2*,3*,4*
+Domain0 Region00          : 0x0000000002000000-0x000000000200ffff (I)
+Domain0 Region01          : 0x0000000040000000-0x000000004003ffff ()
+Domain0 Region02          : 0x0000000040800000-0x000000004083ffff (R,W)
+Domain0 Region03          : 0x0000000040400000-0x00000000407fffff (R,X)
+Domain0 Region04          : 0x0000000000000000-0xffffffffffffffff (R,W,X)
+Domain0 Next Address      : 0x0000000040402240
+Domain0 Next Arg1         : 0x0000000040840064
+Domain0 Next Mode         : S-mode
+Domain0 SysReset          : yes
+
+Edk2OpensbiPlatformFinalInit: Entry
+SecPostOpenSbiPlatformFinalInit: Entry, preparing to jump to PEI Core
+
+SecPostOpenSbiPlatformFinalInit: OpenSBI scratch address for each hart:
+          Hart 1: 0x40869000
+          Hart 2: 0x40867000
+          Hart 3: 0x40865000
+          Hart 4: 0x40863000
+SecPostOpenSbiPlatformFinalInit: OpenSBI Hart 1 Firmware Context Hart-specific at address: 0x40868E00
+SecPostOpenSbiPlatformFinalInit: OpenSBI Hart 2 Firmware Context Hart-specific at address: 0x40866E00
+SecPostOpenSbiPlatformFinalInit: OpenSBI Hart 3 Firmware Context Hart-specific at address: 0x40864E00
+SecPostOpenSbiPlatformFinalInit: OpenSBI Hart 4 Firmware Context Hart-specific at address: 0x40862E00
+SecPostOpenSbiPlatformFinalInit: Will jump to PEI Core in OpenSBI with 
+  sbi_scratch = 40869000
+  sbi_platform = 40024D50
+  FirmwareContext = 4090FB00
+Boot HART ID              : 1
+Boot HART Domain          : root
+Boot HART ISA             : rv64imafdcbsux
+Boot HART Features        : scounteren,mcounteren
+Boot HART PMP Count       : 16
+Boot HART PMP Granularity : 4096
+Boot HART PMP Address Bits: 34
+Boot HART MHPM Count      : 2
+Boot HART MHPM Count      : 2
+Boot HART MIDELEG         : 0x0000000000000222
+Boot HART MEDELEG         : 0x000000000000b109
+Set PEI Service 0x4090F498 at OpenSBI Firmware Context at 0x4090FB00
+Set PEI Service 0x4090F498 at OpenSBI Firmware Context at 0x4090FB00
+Register PPI Notify: DCD0BE23-9586-40F4-B643-06522CED4EDE
+Install PPI: 8C8CE578-8A3D-4F1C-9935-896185C32DD3
+Install PPI: 5473C07A-3DCB-4DCA-BD6F-1E9689E7349A
+The 0th FV start address is 0x00040400000, size is 0x00180000, handle is 0x40400000
+Register PPI Notify: 49EDB1C1-BF21-4761-BB12-EB0031AABB39
+Register PPI Notify: EA7CA24B-DED5-4DAD-A389-BF827E8F9B38
+Install PPI: B9E0ABFE-5979-4914-977F-6DEE78C278A6
+Install PPI: DBE23AA9-A345-4B97-85B6-B226F1617389
+Install PPI: CEAB683C-EC56-4A2D-A906-4053FA4E9C16
+DiscoverPeimsAndOrderWithApriori(): Found 0x4 PEI FFS files in the 0th FV
+Loading PEIM 9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50
+Loading PEIM at 0x0004041E000 EntryPoint=0x0004041E240 PcdPeim.efi
+Set PEI Service 0x4090F498 at OpenSBI Firmware Context at 0x4090FB00
+Install PPI: 06E81C58-4AD7-44BC-8390-F10265F72480
+Install PPI: 01F34D25-4DE2-23AD-3FF3-36353FF323F1
+Install PPI: 4D8B155B-C059-4C8F-8926-06FD4331DB8A
+Install PPI: A60C6B59-E459-425D-9C69-0BCC9CB27D81
+Register PPI Notify: 605EA650-C65C-42E1-BA80-91A52AB618C6
+Loading PEIM 5592FC16-8FEF-4DE3-A6CF-6C59081E4EB7
+Loading PEIM at 0x00040438000 EntryPoint=0x00040438240 PlatformPei.efi
+Set PEI Service 0x4090F498 at OpenSBI Firmware Context at 0x4090FB00
+Platform PEIM Loaded
+This is wake from S3
+Install PPI: 7408D748-FC8C-4EE6-9288-C4BEC092A410
+Platform BOOT mode initiated.
+PublishPeiMemory: MemoryBase:0x41000000 MemorySize:3F000000
+PeiInstallPeiMemory MemoryBegin 0x41000000, MemoryLength 0x3F000000
+PEI memory published.
+Platform RAM regions initiated.
+Platform PEI Firmware Volume Initialization
+Platform builds DXE FV at 40580000, size 280000.
+Install PPI: 49EDB1C1-BF21-4761-BB12-EB0031AABB39
+Notify: PPI Guid: 49EDB1C1-BF21-4761-BB12-EB0031AABB39, Peim notify entry point: 40406BBA
+The 1th FV start address is 0x00040580000, size is 0x00280000, handle is 0x40580000
+Found firmware volume Image File 40580078 in FV[1] 40580000
+Building U5 Coreplex processor information HOB
+CreateU54E51CoreProcessorSpecificDataHob: Entry.
+    Firmware Context is at 0x4090FB00.
+    Firmware Context Hart specific is at 0x0.
+    This hart: 0 is ignored by platform.
+CreateU54E51CoreProcessorSpecificDataHob: Entry.
+    Firmware Context is at 0x4090FB00.
+    Firmware Context Hart specific is at 0x40868E00.
+        *HartId = 0x1
+        *Is Boot Hart? = 0x1
+        *PrivilegeModeSupported = 0xD
+        *MModeExcepDelegation = 0x0
+        *MModeInterruptDelegation = 0x0
+        *HartXlen = 0x2
+        *MachineModeXlen = 0x2
+        *SupervisorModeXlen = 0x2
+        *UserModeXlen = 0x2
+        *InstSetSupported = 0x7BDC6E9D
+        *MachineVendorId = 0x7ED2F8B8
+        *MachineArchId = 0x7
+        *MachineImplId = 0x8
+Support U5 application core on U5 platform, HOB Data at address 0x40900BF0
+CreateU54E51CoreProcessorSpecificDataHob: Entry.
+    Firmware Context is at 0x4090FB00.
+    Firmware Context Hart specific is at 0x40866E00.
+        *HartId = 0x2
+        *Is Boot Hart? = 0x0
+        *PrivilegeModeSupported = 0x1
+        *MModeExcepDelegation = 0x0
+        *MModeInterruptDelegation = 0x0
+        *HartXlen = 0x2
+        *MachineModeXlen = 0x2
+        *SupervisorModeXlen = 0x2
+        *UserModeXlen = 0x2
+        *InstSetSupported = 0x0
+        *MachineVendorId = 0x0
+        *MachineArchId = 0x0
+        *MachineImplId = 0x0
+Support U5 application core on U5 platform, HOB Data at address 0x40900CA8
+CreateU54E51CoreProcessorSpecificDataHob: Entry.
+    Firmware Context is at 0x4090FB00.
+    Firmware Context Hart specific is at 0x40864E00.
+        *HartId = 0x3
+        *Is Boot Hart? = 0x0
+        *PrivilegeModeSupported = 0x1
+        *MModeExcepDelegation = 0x0
+        *MModeInterruptDelegation = 0x0
+        *HartXlen = 0x2
+        *MachineModeXlen = 0x2
+        *SupervisorModeXlen = 0x2
+        *UserModeXlen = 0x2
+        *InstSetSupported = 0x0
+        *MachineVendorId = 0x0
+        *MachineArchId = 0x0
+        *MachineImplId = 0x0
+Support U5 application core on U5 platform, HOB Data at address 0x40900D60
+CreateU54E51CoreProcessorSpecificDataHob: Entry.
+    Firmware Context is at 0x4090FB00.
+    Firmware Context Hart specific is at 0x40862E00.
+        *HartId = 0x4
+        *Is Boot Hart? = 0x0
+        *PrivilegeModeSupported = 0x1
+        *MModeExcepDelegation = 0x0
+        *MModeInterruptDelegation = 0x0
+        *HartXlen = 0x2
+        *MachineModeXlen = 0x2
+        *SupervisorModeXlen = 0x2
+        *UserModeXlen = 0x2
+        *InstSetSupported = 0x0
+        *MachineVendorId = 0x0
+        *MachineArchId = 0x0
+        *MachineImplId = 0x0
+Support U5 application core on U5 platform, HOB Data at address 0x40900E18
+Support 4 U5 application cores on U5 platform
+CreateU5MCProcessorSmbiosDataHob: Entry
+CreateU5MCProcessorSmbiosDataHob: Exit
+U5 MC Coreplex SMBIOS DATA HOB at address 0x40900FD8
+Temp Stack : BaseAddress=0x40908000 Length=0x8000
+Temp Heap  : BaseAddress=0x40900000 Length=0x8000
+Total temporary memory:    65536 bytes.
+  temporary memory stack ever used:       32768 bytes.
+  temporary memory heap used for HobList: 4096 bytes.
+  temporary memory heap occupied by memory pages: 0 bytes.
+Old Stack size 32768, New stack size 131072
+Stack Hob: BaseAddress=0x41000000 Length=0x20000
+Heap Offset = 0x720000 Stack Offset = 0x710000
+TemporaryRamMigration: Temp Mem Base:0x40900000, Permanent Mem Base:0x41018000, CopySize:0x10000
+TemporaryRamMigration: OpenSBI Firmware Context is relocated to 0x4101FB00
+OpenSBI Firmware Context at 0x4101FB00
+             PEI Service at 0x4101F498
+
+Set PEI Service 0x4101F498 at OpenSBI Firmware Context at 0x4101FB00
+Set PEI Service 0x4101F498 at OpenSBI Firmware Context at 0x4101FB00
+Loading PEIM 52C05B14-0B98-496C-BC3B-04B50211D680
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading PEIM at 0x0007FFE5000 EntryPoint=0x0007FFE5240 PeiCore.efi
+Set PEI Service 0x4101E808 at OpenSBI Firmware Context at 0x4101FB00
+Set PEI Service 0x4101E808 at OpenSBI Firmware Context at 0x4101FB00
+Reinstall PPI: 8C8CE578-8A3D-4F1C-9935-896185C32DD3
+Reinstall PPI: 5473C07A-3DCB-4DCA-BD6F-1E9689E7349A
+Reinstall PPI: B9E0ABFE-5979-4914-977F-6DEE78C278A6
+TemporaryRamDone: 2nd time PEI core, temporary ram done.
+Install PPI: F894643D-C449-42D1-8EA8-85BDD8C65BDE
+Loading PEIM 9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading PEIM at 0x0007FFDB000 EntryPoint=0x0007FFDB240 PcdPeim.efi
+Set PEI Service 0x4101E808 at OpenSBI Firmware Context at 0x4101FB00
+Reinstall PPI: 06E81C58-4AD7-44BC-8390-F10265F72480
+Reinstall PPI: 4D8B155B-C059-4C8F-8926-06FD4331DB8A
+Reinstall PPI: 01F34D25-4DE2-23AD-3FF3-36353FF323F1
+Reinstall PPI: A60C6B59-E459-425D-9C69-0BCC9CB27D81
+Loading PEIM 724FD5E9-F35E-4386-B1E1-2ADA6103C4F9
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading PEIM at 0x0007FFD5000 EntryPoint=0x0007FFD5240 FdtPei.efi
+Set PEI Service 0x4101E808 at OpenSBI Firmware Context at 0x4101FB00
+PeimPassFdt: Build FDT HOB - FDT at address: 0x40840064 
+DiscoverPeimsAndOrderWithApriori(): Found 0x1 PEI FFS files in the 1th FV
+Loading PEIM 86D70125-BAA3-4296-A62F-602BEBBB9081
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading PEIM at 0x0007FFBA000 EntryPoint=0x0007FFBA240 DxeIpl.efi
+Set PEI Service 0x4101E808 at OpenSBI Firmware Context at 0x4101FB00
+Set PEI Service 0x4101E808 at OpenSBI Firmware Context at 0x4101FB00
+Install PPI: EE4E5898-3914-4259-9D6E-DC7BD79403CF
+Install PPI: 1A36E4E7-FAB6-476A-8E75-695A0576FDD7
+Install PPI: 0AE8CE5D-E448-4437-A8D7-EBF5F194F731
+Customized Guided section Memory Size required is 0x561000 and address is 0x7FA49000
+ProcessFvFile() FV at 0x7FA4A000, FvAlignment required is 0x1000
+Install PPI: EA7CA24B-DED5-4DAD-A389-BF827E8F9B38
+Notify: PPI Guid: EA7CA24B-DED5-4DAD-A389-BF827E8F9B38, Peim notify entry point: 40406BBA
+The 2th FV start address is 0x0007FA4A000, size is 0x00560000, handle is 0x7FA4A000
+Install PPI: 49EDB1C1-BF21-4761-BB12-EB0031AABB39
+Notify: PPI Guid: 49EDB1C1-BF21-4761-BB12-EB0031AABB39, Peim notify entry point: 40406BBA
+The FV 7FA4A000 has already been processed!
+DiscoverPeimsAndOrderWithApriori(): Found 0x0 PEI FFS files in the 2th FV
+DXE IPL Entry
+Loading PEIM D6A2CB7F-6A18-4E2F-B43B-9920A733700A
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading PEIM at 0x0007FA0B000 EntryPoint=0x0007FA0B240 DxeCore.efi
+Loading DXE CORE at 0x0007FA0B000 EntryPoint=0x0007FA0B240
+Install PPI: 605EA650-C65C-42E1-BA80-91A52AB618C6
+Notify: PPI Guid: 605EA650-C65C-42E1-BA80-91A52AB618C6, Peim notify entry point: 4041E778
+DXE Core new stack at 7F9EB000, stack pointer at 7FA0AFF0
+RISC-V InternalSwitchStack Entry:7FA0B240 Context1:41020000 Context2:0 NewStack7FA0AFF0
+CoreInitializeMemoryServices:
+  BaseAddress - 0x41022000 Length - 0x3E9C9000 MinimalMemorySizeNeeded - 0x10F4000
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7FA444A0
+ProtectUefiImageCommon - 0x7FA444A0
+  - 0x000000007FA0B000 - 0x000000000003E000
+DxeMain: MemoryBaseAddress=0x41022000 MemoryLength=0x3E9C9000
+HOBLIST address in DXE = 0x7F803018
+Memory Allocation 0x00000004 0x7F9EB000 - 0x7FA0AFFF
+Memory Allocation 0x00000003 0x7FFE5000 - 0x7FFFFFFF
+Memory Allocation 0x00000003 0x7FFDB000 - 0x7FFE4FFF
+Memory Allocation 0x00000003 0x7FFD5000 - 0x7FFDAFFF
+Memory Allocation 0x00000004 0x7FFC8000 - 0x7FFD4FFF
+Memory Allocation 0x00000003 0x7FFBA000 - 0x7FFC7FFF
+Memory Allocation 0x00000004 0x7FFAA000 - 0x7FFB9FFF
+Memory Allocation 0x00000004 0x7FA49000 - 0x7FFA9FFF
+Memory Allocation 0x00000003 0x7FA0B000 - 0x7FA48FFF
+Memory Allocation 0x00000003 0x7FA0B000 - 0x7FA48FFF
+Memory Allocation 0x00000004 0x7F9EB000 - 0x7FA0AFFF
+Memory Allocation 0x00000004 0x41000000 - 0x4101FFFF
+FV Hob            0x40580000 - 0x407FFFFF
+FV Hob            0x7FA4A000 - 0x7FFA9FFF
+FV2 Hob           0x7FA4A000 - 0x7FFA9FFF
+                  27A72E80-3118-4C0C-8673-AA5B4EFA9613 - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+FV3 Hob           0x7FA4A000 - 0x7FFA9FFF - 0x0 - 0x1
+                  27A72E80-3118-4C0C-8673-AA5B4EFA9613 - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+InstallProtocolInterface: D8117CFE-94A6-11D4-9A3A-0090273FC14D 7FA44450
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 7F7FE4B0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7F7FA018
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 7F7FABB0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7F7FAC98
+InstallProtocolInterface: 220E73B6-6BDB-4413-8405-B974B108619A 7F7F9030
+InstallProtocolInterface: 220E73B6-6BDB-4413-8405-B974B108619A 7F7F9C30
+InstallProtocolInterface: EE4E5898-3914-4259-9D6E-DC7BD79403CF 7FA44470
+Loading driver 9B680FCE-AD6B-4F3A-B60B-F59899003443
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F41E240
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F971000 EntryPoint=0x0007F97128A DevicePathDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F3B18
+ProtectUefiImageCommon - 0x7F41E240
+  - 0x000000007F971000 - 0x0000000000014B40
+InstallProtocolInterface: 0379BE4E-D706-437D-B037-EDB82FB772A4 7F984808
+InstallProtocolInterface: 8B843E20-8132-4852-90CC-551A4E4A7F1C 7F984848
+InstallProtocolInterface: 05C99A21-C70F-4AD2-8A5F-35DF3343F51E 7F984858
+Loading driver 80CF7257-87AB-47F9-A3FE-D50B76D89541
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F3140
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F964000 EntryPoint=0x0007F96428A PcdDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F3698
+ProtectUefiImageCommon - 0x7F3F3140
+  - 0x000000007F964000 - 0x000000000000C200
+InstallProtocolInterface: 11B34006-D85B-4D0A-A290-D5A571310EF7 7F96F8E0
+InstallProtocolInterface: 13A3F0F6-264A-3EF0-F2E0-DEC512342F34 7F96F9D8
+InstallProtocolInterface: 5BE40F57-FA68-4610-BBBF-E9C5FCDAD365 7F96FA68
+InstallProtocolInterface: FD0F4478-0EFD-461D-BA2D-E58C45FD5F5E 7F96FA80
+Loading driver 2FBD9E55-9BC7-4EEF-BF93-0D5582FE647B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F4082C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/Silicon/StarFive/JH7110/Driver/Spi/SpiDxe/SpiDxe/DEBUG/SpiDxe.dll  !!!!!!!!
+Loading driver at 0x0007F9AC000 EntryPoint=0x0007F9AC28A SpiDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F408618
+ProtectUefiImageCommon - 0x7F4082C0
+  - 0x000000007F9AC000 - 0x00000000000091C0
+InstallProtocolInterface: A33C46E0-4FB6-4AA3-8E66-00069F3A1181 7F9D9B18
+Loading driver D3DF07BE-3810-4521-89EF-C4E22E0B2484
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FD0C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/Silicon/StarFive/JH7110/Driver/Spi/SpiFlashDxe/SpiFlashDxe/DEBUG/SpiFlashDxe.dll  !!!!!!!!
+Loading driver at 0x0007F9A3000 EntryPoint=0x0007F9A328A SpiFlashDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FD318
+ProtectUefiImageCommon - 0x7F3FD0C0
+  - 0x000000007F9A3000 - 0x0000000000008940
+InstallProtocolInterface: 5ECECDF6-81DA-4E10-9D4B-26658C03ABBC 7F9D9998
+Loading driver DB8BFC83-6DEA-4AD1-AD3D-FDC579430233
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FC040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/Silicon/StarFive/JH7110/Driver/Spi/FvbDxe/FvbDxe/DEBUG/FvbDxe.dll  !!!!!!!!
+Loading driver at 0x0007F999000 EntryPoint=0x0007F99928A FvbDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FCF18
+ProtectUefiImageCommon - 0x7F3FC040
+  - 0x000000007F999000 - 0x0000000000009440
+SipCniBurtDv(egh-1 =(xFFFFFFFFL  UNNDsiainufr: RefClk 100000000Hz sclk 1000000Hz Div 0xF, actual 3125000Hz
+SipCniBurtDv(egh-1 =(xFFFFFFFFL  UNNDsiainufr: RefClk 100000000Hz sclk 100000000Hz Div 0x0, actual 50000000Hz
+Spi: Read data capture delay calibrated to 2 (2 - 3)
+Detected gd25lq128E SPI NOR flash with page size 256 B, erase size 4 KB, total 16 MB
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7F9D93A0
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 7F9D9360
+FvbValidateFvHeader: No Firmware Volume header present
+FvbPrepareFvHeader: The FVB Header is not valid.
+FvbPrepareFvHeader: Installing a correct one for this volume.
+InstallProtocolInterface: D1A86E3F-0707-4C35-83CD-DC2C29C891A3 0
+Loading driver D93CE3D8-A7EB-4730-8C8E-CC466A9ECC3C
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FC4C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe/DEBUG/ReportStatusCodeRouterRuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007F991000 EntryPoint=0x0007F99128A ReportStatusCodeRouterRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FC818
+ProtectUefiImageCommon - 0x7F3FC4C0
+  - 0x000000007F991000 - 0x0000000000007900
+InstallProtocolInterface: 86212936-0E76-41C8-A03A-2AF2FC1C39E2 7F9982E0
+InstallProtocolInterface: D2B2B828-0826-48A7-B3DF-983C006024F0 7F9982D8
+Loading driver B601F8C4-43B7-4784-95B1-F4226CB40CEE
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FB7C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Core/RuntimeDxe/RuntimeDxe/DEBUG/RuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007F98A000 EntryPoint=0x0007F98A28A RuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FB598
+ProtectUefiImageCommon - 0x7F3FB7C0
+  - 0x000000007F98A000 - 0x0000000000006D40
+InstallProtocolInterface: B7DFB4E1-052F-449F-87BE-9818FC91B733 7F9906C8
+Loading driver F80697E9-7FD6-4665-8646-88E33EF71DFC
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F405B40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F95C000 EntryPoint=0x0007F95C28A SecurityStubDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F405E18
+ProtectUefiImageCommon - 0x7F405B40
+  - 0x000000007F95C000 - 0x0000000000007B00
+InstallProtocolInterface: 94AB2F58-1438-4EF1-9152-18941A3A0E68 7F9634D0
+InstallProtocolInterface: A46423E3-4617-49F1-B9FF-D1BFA9115839 7F9634C8
+InstallProtocolInterface: 15853D7C-3DDF-43E0-A1CB-EBF85B8F872C 7F9634D8
+Loading driver A19B1FE7-C1BC-49F8-875F-54A5D542443F
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F4052C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F956000 EntryPoint=0x0007F95628A CpuIo2Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FEB18
+ProtectUefiImageCommon - 0x7F4052C0
+  - 0x000000007F956000 - 0x00000000000056C0
+InstallProtocolInterface: AD61F191-AE5F-4C0E-B9FA-E869D288C64F 7F95B148
+Loading driver C8339973-A563-4561-B858-D8476F9DEFC4
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FE7C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F951000 EntryPoint=0x0007F95128A Metronome.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FE718
+ProtectUefiImageCommon - 0x7F3FE7C0
+  - 0x000000007F951000 - 0x0000000000004700
+InstallProtocolInterface: 26BACCB2-6F42-11D4-BCE7-0080C73C8881 7F955208
+Loading driver 2AEB1F3E-5B6B-441B-92C1-4A9E6FC85E92
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FF040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F94C000 EntryPoint=0x0007F94C28A CpuDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FE398
+ProtectUefiImageCommon - 0x7F3FF040
+  - 0x000000007F94C000 - 0x0000000000004A00
+InstallProtocolInterface: 26BACCB1-6F42-11D4-BCE7-0080C73C8881 7F9504C8
+MemoryProtectionCpuArchProtocolNotify:
+ProtectUefiImageCommon - 0x7FA444A0
+  - 0x000000007FA0B000 - 0x000000000003E000
+ProtectUefiImageCommon - 0x7F41E240
+  - 0x000000007F971000 - 0x0000000000014B40
+ProtectUefiImageCommon - 0x7F3F3140
+  - 0x000000007F964000 - 0x000000000000C200
+ProtectUefiImageCommon - 0x7F4082C0
+  - 0x000000007F9AC000 - 0x00000000000091C0
+ProtectUefiImageCommon - 0x7F3FD0C0
+  - 0x000000007F9A3000 - 0x0000000000008940
+ProtectUefiImageCommon - 0x7F3FC040
+  - 0x000000007F999000 - 0x0000000000009440
+ProtectUefiImageCommon - 0x7F3FC4C0
+  - 0x000000007F991000 - 0x0000000000007900
+ProtectUefiImageCommon - 0x7F3FB7C0
+  - 0x000000007F98A000 - 0x0000000000006D40
+ProtectUefiImageCommon - 0x7F405B40
+  - 0x000000007F95C000 - 0x0000000000007B00
+ProtectUefiImageCommon - 0x7F4052C0
+  - 0x000000007F956000 - 0x00000000000056C0
+ProtectUefiImageCommon - 0x7F3FE7C0
+  - 0x000000007F951000 - 0x0000000000004700
+ProtectUefiImageCommon - 0x7F3FF040
+  - 0x000000007F94C000 - 0x0000000000004A00
+Loading driver CBD2E4D5-7068-4FF5-B462-9822B4AD8D60
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F404BC0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe/DEBUG/VariableRuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007E8B6000 EntryPoint=0x0007E8B628A VariableRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F404E18
+ProtectUefiImageCommon - 0x7F404BC0
+  - 0x000000007E8B6000 - 0x00000000000194C0
+VarCheckLibRegisterSetVariableCheckHandler - 0x7E8C75E2 Success
+Variable driver common space: 0xFF9C 0xFF9C 0xFF9C
+Variable driver will work with auth variable format!
+InstallProtocolInterface: CD3D0A05-9E24-437C-A891-1EE053DB7638 7E8CDFC8
+InstallProtocolInterface: AF23B340-97B4-4685-8D4F-A3F28169B21D 7E8CE000
+InstallProtocolInterface: 1E5668E2-8481-11D4-BCF1-0080C73C8881 0
+VarCheckLibRegisterSetVariableCheckHandler - 0x7E8C639E Success
+InstallProtocolInterface: 81D1675C-86F6-48DF-BD95-9A6E4F0925C3 7E8CDFD0
+Loading driver 4B28E4C7-FF36-4E10-93CF-A82159E777C5
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F403B40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe/DEBUG/ResetSystemRuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007E89D000 EntryPoint=0x0007E89D28A ResetSystemRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F403E98
+ProtectUefiImageCommon - 0x7F403B40
+  - 0x000000007E89D000 - 0x0000000000007040
+InstallProtocolInterface: 27CFAC88-46CC-11D4-9A38-0090273FC14D 0
+InstallProtocolInterface: 9DA34AE0-EAF9-4BBF-8EC3-FD60226C44BE 7E8A39F0
+InstallProtocolInterface: 695D7835-8D47-4C11-AB22-FA8ACCE7AE7A 7E8A3A18
+InstallProtocolInterface: 2DF6BA0B-7092-440D-BD04-FB091EC3F3C1 7E8A3A40
+Loading driver 79E4A61C-ED73-4312-94FE-E3E7563362A9
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F402040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F946000 EntryPoint=0x0007F94628A PrintDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F403418
+ProtectUefiImageCommon - 0x7F402040
+  - 0x000000007F946000 - 0x0000000000005240
+InstallProtocolInterface: F05976EF-83F1-4F3D-8619-F7595D41E538 7F94AC88
+InstallProtocolInterface: 0CC252D2-C106-4661-B5BD-3147A4F81F92 7F94ACD8
+Loading driver 348C4D62-BFBD-4882-9ECE-C80BB1C4783B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F402340
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F916000 EntryPoint=0x0007F91628A HiiDatabase.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F402898
+ProtectUefiImageCommon - 0x7F402340
+  - 0x000000007F916000 - 0x000000000002F8C0
+InstallProtocolInterface: E9CA4775-8657-47FC-97E7-7ED65A084324 7F943C70
+InstallProtocolInterface: 0FD96974-23AA-4CDC-B9CB-98D17750322A 7F943CE8
+InstallProtocolInterface: EF9FC172-A1B2-4693-B327-6D32FC416042 7F943D10
+InstallProtocolInterface: 587E72D7-CC50-4F79-8209-CA291FC1A10F 7F943D68
+InstallProtocolInterface: 0A8BADD5-03B8-4D19-B128-7B8F0EDAA596 7F943D98
+InstallProtocolInterface: 31A6406A-6BDF-4E46-B2A2-EBAA89C40920 7F943C90
+InstallProtocolInterface: 1A1241E6-8F19-41A9-BC0E-E8EF39E06546 7F943CB8
+Loading driver 96B5C032-DF4C-4B6E-8232-438DCF448D0E
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F4011C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F910000 EntryPoint=0x0007F91028A NullMemoryTestDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F401498
+ProtectUefiImageCommon - 0x7F4011C0
+  - 0x000000007F910000 - 0x0000000000005600
+InstallProtocolInterface: 309DE7F1-7F5E-4ACE-B49C-531BE5AA95EF 7F915048
+Loading driver A7D8F3F7-D8A7-47DF-B3EC-9E5A693C380C
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F400C40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F907000 EntryPoint=0x0007F90728A FdtDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F400B18
+ProtectUefiImageCommon - 0x7F400C40
+  - 0x000000007F907000 - 0x00000000000080C0
+Fixing up device tree with boot hart id: 1
+Loading driver 9A5163E7-5C29-453F-825C-837A46A81E15
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F400240
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F902000 EntryPoint=0x0007F90228A SerialDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F400598
+ProtectUefiImageCommon - 0x7F400240
+  - 0x000000007F902000 - 0x0000000000004C00
+InstallProtocolInterface: BB25CF6F-F1D4-11D2-9A0C-0090273FC1FD 7F9066D8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7F906688
+Loading driver F9D88642-0737-49BC-81B5-6889CD57D9EA
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FA140
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8F7000 EntryPoint=0x0007F8F728A SmbiosDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3FAA98
+ProtectUefiImageCommon - 0x7F3FA140
+  - 0x000000007F8F7000 - 0x000000000000AA80
+InstallProtocolInterface: 03583FF6-CB36-4940-947E-B9B39F4AFAF7 7F901378
+Loading driver A210F973-229D-4F4D-AA37-9895E6C9EABA
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3FA4C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8F2000 EntryPoint=0x0007F8F228A DpcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F2B18
+ProtectUefiImageCommon - 0x7F3FA4C0
+  - 0x000000007F8F2000 - 0x0000000000005000
+InstallProtocolInterface: 480F8AE9-0C46-4AA9-BC89-DB9FBA619806 7F8F6908
+Loading driver B6F44CC0-9E45-11DF-BE21-0002A5D5C51B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F27C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8E4000 EntryPoint=0x0007F8E428A MmcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F2598
+ProtectUefiImageCommon - 0x7F3F27C0
+  - 0x000000007F8E4000 - 0x000000000000DB40
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F8F1238
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F8F1330
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F8F1348
+InstallProtocolInterface: 4D330321-025F-4AAC-90D8-5ED900173B63 7F8F1320
+Loading driver B549F005-4BD4-4020-A0CB-06F42BDA68C3
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F9C40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8DC000 EntryPoint=0x0007F8DC28A DwEmmcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F9998
+ProtectUefiImageCommon - 0x7F3F9C40
+  - 0x000000007F8DC000 - 0x0000000000007100
+InstallProtocolInterface: 3E591C00-9E4A-11DF-9244-0002A5D5C51B 7F8E2A98
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 7F3F9548
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7F3F9418
+Not a SD2.0 Card
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+Card should be MMC
+MmcIdentificationMode(): No Card
+InitializeMmcDevice(): Error in Identification Mode, Status=No Media
+Loading driver B549F005-4BD4-4020-A0CB-06F5478A68C3
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F8BC0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8D4000 EntryPoint=0x0007F8D428A DwSdmmcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F8798
+ProtectUefiImageCommon - 0x7F3F8BC0
+  - 0x000000007F8D4000 - 0x0000000000007100
+InstallProtocolInterface: 3E591C00-9E4A-11DF-9244-0002A5D5C51B 7F8DAA98
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 7F3F8648
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7F3F8418
+Card is SD2.0 => Supports high capacity
+Response: 0x1CE
+	- READY_FOR_DATA
+	- State: Idle
+Card should be SD
+Card should be SD
+Card should be SD
+High capacity card.
+- PrintOCR Ocr (0xC0FF8000)
+	- Card operating voltage: 2.7 to 3.6
+	- AccessMode: Block Mode (0x2)
+	- PowerUp
+- PrintCID
+	- Manufacturing date: 8/21
+	- Product serial number: 0x2ACDC06F
+	- Product revision: 105
+	- OEM ID: MT
+- PrintRCA: 0x12340500
+	- Status: 0x500
+	- RCA: 0x1234
+- PrintCSD Version 2.00/High Capacity
+	- Supported card command class: 0x5B5
+	- Speed: 3.0 10Mbit/s
+	- Maximum Read Data Block: 512
+	- Maximum Write Data Block: 512
+	- Format (0): Hard disk-like file system with partition table
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Found SD Card for Spec Version 2.0
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Loading driver 6C2004EF-4E0E-4BE4-B14C-340EB4AA5891
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F7B40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe/DEBUG/StatusCodeHandlerRuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007E896000 EntryPoint=0x0007E89628A StatusCodeHandlerRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F7098
+ProtectUefiImageCommon - 0x7F3F7B40
+  - 0x000000007E896000 - 0x0000000000006C40
+PROGRESS CODE: V03040003 I0
+Loading driver B336F62D-4135-4A55-AE4E-4971BBF0885D
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F7240
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/DEBUG/RealTimeClock.dll  !!!!!!!!
+Loading driver at 0x0007E88F000 EntryPoint=0x0007E88F28A RealTimeClock.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F7718
+ProtectUefiImageCommon - 0x7F3F7240
+  - 0x000000007E88F000 - 0x00000000000061C0
+PROGRESS CODE: V03040002 I0
+InitializeRealTimeClock: using default timezone/daylight settings
+InstallProtocolInterface: 27CFAC87-46CC-11D4-9A38-0090273FC14D 0
+PROGRESS CODE: V03040003 I0
+Loading driver 3F75D495-23FF-46B6-9D19-0DECC8A4EA91
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F60C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8CF000 EntryPoint=0x0007F8CF28A Timer.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F6A98
+ProtectUefiImageCommon - 0x7F3F60C0
+  - 0x000000007F8CF000 - 0x0000000000004C00
+PROGRESS CODE: V03040002 I0
+TimerDriverSetTimerPeriod(0x0)
+RegisterCpuInterruptHandler: Type:1 Handler: 7F8CF514
+TimerDriverSetTimerPeriod(0x186A0)
+InstallProtocolInterface: 26BACCB3-6F42-11D4-BCE7-0080C73C8881 7F8D36C8
+TimerDriverRegisterHandler(0x7FA28CF2) called
+PROGRESS CODE: V03040003 I0
+Loading driver 5FC01647-AADD-42E1-AD99-DF4CB89F5A92
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F6440
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8C6000 EntryPoint=0x0007F8C628A RiscVSmbiosDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F5B18
+ProtectUefiImageCommon - 0x7F3F6440
+  - 0x000000007F8C6000 - 0x00000000000080C0
+PROGRESS CODE: V03040002 I0
+RiscVSmbiosBuilderEntry: entry
+Building Type 4.
+    Processor GUID: 339F3806-DBF9-1343-9A9B-1C68D604EAFF
+    Processor UUID: 0
+SmbiosAdd: Smbios type 7 with size 0x1D is added to 32-bit table
+SmbiosCreateTable: Initialize 32-bit entry point structure
+SmbiosCreateTable() re-allocate SMBIOS 32-bit table
+SMBIOS Type 7 was added. SMBIOS Handle: 0x0
+Improper cache level of SMBIOS handle 0
+SmbiosAdd: Smbios type 7 with size 0x1D is added to 32-bit table
+SMBIOS Type 7 was added. SMBIOS Handle: 0x1
+Improper cache level of SMBIOS handle 1
+SmbiosAdd: Smbios type 4 with size 0x34 is added to 32-bit table
+SMBIOS Type 4 was added. SMBIOS Handle: 0x2
+Building Type 44 for...
+SmbiosAdd: Smbios type 44 with size 0x78 is added to 32-bit table
+SMBIOS Type 44 was added. SMBIOS Handle: 0x3
+SmbiosAdd: Smbios type 44 with size 0x78 is added to 32-bit table
+SMBIOS Type 44 was added. SMBIOS Handle: 0x4
+SmbiosAdd: Smbios type 44 with size 0x78 is added to 32-bit table
+SMBIOS Type 44 was added. SMBIOS Handle: 0x5
+SmbiosAdd: Smbios type 44 with size 0x78 is added to 32-bit table
+SMBIOS Type 44 was added. SMBIOS Handle: 0x6
+RiscVSmbiosBuilderEntry: exit
+PROGRESS CODE: V03040003 I0
+Loading driver FE5CEA76-4F72-49E8-986F-2CD899DFFE5D
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7F3F4CC0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F8BA000 EntryPoint=0x0007F8BA28A FaultTolerantWriteDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F4A18
+ProtectUefiImageCommon - 0x7F3F4CC0
+  - 0x000000007F8BA000 - 0x000000000000BC80
+PROGRESS CODE: V03040002 I0
+Ftw: FtwWorkSpaceLba - 0x1, WorkBlockSize  - 0x10000, FtwWorkSpaceBase - 0x0
+Ftw: FtwSpareLba     - 0x2, SpareBlockSize - 0x10000
+Ftw: NumberOfWorkBlock - 0x1, FtwWorkBlockLba - 0x1
+Ftw: WorkSpaceLbaInSpare - 0x0, WorkSpaceBaseInSpare - 0x0
+Ftw: Remaining work space size - 18
+Ftw: start to reclaim work space
+Ftw: reclaim work space successfully
+InstallProtocolInterface: 3EBD9E82-2C78-4DE6-9786-8D4BFCB7C881 7EFE1028
+Ftw: Remaining work space size - FFE0
+Ftw: Remaining work space size - FFE0
+Ftw: Allocate() success, Caller:FE5CEA76-4F72-49E8-986F-2CD899DFFE5D, # 1
+Ftw: Write(), BlockSize - 0x10000, NumberOfWriteBlock - 0x1
+Ftw: Write() success, (Lba:Offset)=(0:0x48), Length: 0xFFB8
+NOTICE - AuthVariableLibInitialize() returns Unsupported!
+Variable driver will continue to work without auth variable support!
+RecordSecureBootPolicyVarData GetVariable SecureBoot Status E
+InstallProtocolInterface: 6441F818-6362-4E44-B570-7DBA31DD2453 0
+PROGRESS CODE: V03040003 I0
+Loading driver 6D33944A-EC75-4855-A54D-809C75241F6C
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC1040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F89B000 EntryPoint=0x0007F89B28A BdsDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7F3F4518
+ProtectUefiImageCommon - 0x7EFC1040
+  - 0x000000007F89B000 - 0x000000000001EF40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 665E3FF6-46CC-11D4-9A38-0090273FC14D 7F8B8F88
+PROGRESS CODE: V03040003 I0
+Loading driver EBF342FE-B1D3-4EF8-957C-8048606FF671
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC12C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F872000 EntryPoint=0x0007F87228A SetupBrowser.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC1518
+ProtectUefiImageCommon - 0x7EFC12C0
+  - 0x000000007F872000 - 0x0000000000028780
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: B9D4C360-BCFB-4F9B-9298-53C136982258 7F898C98
+InstallProtocolInterface: A770C357-B693-4E6D-A6CF-D21C728E550B 7F898CC8
+InstallProtocolInterface: 1F73B18D-4630-43C1-A1DE-6F80855D7DA4 7F898CA8
+PROGRESS CODE: V03040003 I0
+Loading driver 2F30DA26-F51B-4B6F-85C4-31873C281BCA
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFE0140
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F863000 EntryPoint=0x0007F86328A LinuxInitrdDynamicShellCommand.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFE0D18
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 7F8708B0
+ProtectUefiImageCommon - 0x7EFE0140
+  - 0x000000007F863000 - 0x000000000000EA00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 3C7200E9-005F-4EA4-87DE-A3DFAC8A27C3 7F870630
+PROGRESS CODE: V03040003 I0
+Loading driver 128FB770-5E79-4176-9E51-9BB268A17DD1
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFDFAC0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F852000 EntryPoint=0x0007F85228A PciHostBridgeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFDFE18
+ProtectUefiImageCommon - 0x7EFDFAC0
+  - 0x000000007F852000 - 0x0000000000010580
+PROGRESS CODE: V03040002 I0
+PCIe RootBridge constructor
+PCIe port 1 init
+RootBridge: PcieRoot(0x0)
+  Support/Attr: 0 / 0
+    DmaAbove4G: No
+NoExtConfSpace: No
+     AllocAttr: 3 (CombineMemPMem Mem64Decode)
+           Bus: 0 - FF Translation=0
+            Io: 1 - 0 Translation=0
+           Mem: 38000000 - 40000000 Translation=0
+    MemAbove4G: 980000000 - 9C0000000 Translation=0
+          PMem: FFFFFFFFFFFFFFFF - 0 Translation=0
+   PMemAbove4G: FFFFFFFFFFFFFFFF - 0 Translation=0
+CpuSetMemoryAttributes: Set memory attributes not supported yet
+CpuSetMemoryAttributes: Set memory attributes not supported yet
+InstallProtocolInterface: CF8034BE-6768-4D8B-B739-7CCE683A9FBE 7EFCDC40
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7EFCDE98
+InstallProtocolInterface: 2F707EBB-4A1A-11D4-9A38-0090273FC14D 7EFCD270
+PROGRESS CODE: V03040003 I0
+Loading driver F099D67F-71AE-4C36-B2A3-DCEB0EB2B7D8
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFDEBC0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F84D000 EntryPoint=0x0007F84D28A WatchdogTimer.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFDEA98
+ProtectUefiImageCommon - 0x7EFDEBC0
+  - 0x000000007F84D000 - 0x0000000000004D80
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 665E3FF5-46CC-11D4-9A38-0090273FC14D 7F851848
+PROGRESS CODE: V03040003 I0
+Loading driver AD608272-D07F-4964-801E-7BD3B7888652
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFDE240
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe/DEBUG/MonotonicCounterRuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007E889000 EntryPoint=0x0007E88928A MonotonicCounterRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD7018
+ProtectUefiImageCommon - 0x7EFDE240
+  - 0x000000007E889000 - 0x0000000000005180
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 1DA97072-BDDC-4B30-99F1-72A0B56FFF2A 0
+PROGRESS CODE: V03040003 I0
+Loading driver 42857F0A-13F2-4B21-8A23-53D3F714B840
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD77C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+!!!!!!!!  InsertImageRecord - Section Alignment(0x40) is not 4K  !!!!!!!!
+!!!!!!!!  Image - /home/sqy/intel/visionfive2/Build/JH7110/DEBUG_GCC5/RISCV64/MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe/DEBUG/CapsuleRuntimeDxe.dll  !!!!!!!!
+Loading driver at 0x0007E881000 EntryPoint=0x0007E88128A CapsuleRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD7698
+ProtectUefiImageCommon - 0x7EFD77C0
+  - 0x000000007E881000 - 0x0000000000005EC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 5053697E-2CBC-4819-90D9-0580DEEE5754 0
+PROGRESS CODE: V03040003 I0
+Loading driver E660EA85-058E-4B55-A54B-F02F83A24707
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFDDB40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F82B000 EntryPoint=0x0007F82B28A DisplayEngine.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFDD098
+ProtectUefiImageCommon - 0x7EFDDB40
+  - 0x000000007F82B000 - 0x00000000000212C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 9BBE29E9-FDA1-41EC-AD52-452213742D2E 7F84A748
+InstallProtocolInterface: 4311EDC0-6054-46D4-9E40-893EA952FCCC 7F84A760
+PROGRESS CODE: V03040003 I0
+Loading driver 51CCF399-4FDF-4E55-A45B-E123F84D456A
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD9140
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F822000 EntryPoint=0x0007F82228A ConPlatformDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD9398
+ProtectUefiImageCommon - 0x7EFD9140
+  - 0x000000007F822000 - 0x0000000000008240
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F829B48
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F829BA8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F829BC0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F829B78
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F829BA8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F829BC0
+PROGRESS CODE: V03040003 I0
+Loading driver 408EDCEC-CF6D-477C-A5A8-B4844E3DE281
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD50C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F813000 EntryPoint=0x0007F81328A ConSplitterDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD5A18
+ProtectUefiImageCommon - 0x7EFD50C0
+  - 0x000000007F813000 - 0x000000000000E3C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F820830
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F820920
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F820938
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F8208C0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F820950
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F820968
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F8208F0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F820980
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F820998
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F820860
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F8209B0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F8209C8
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F820890
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F8209E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F8209F8
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 7F820460
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 7F820490
+InstallProtocolInterface: 31878C87-0B75-11D5-9A4F-0090273FC14D 7F820500
+InstallProtocolInterface: 8D59D32B-C655-4AE9-9B15-F25904992A43 7F820558
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 7F820620
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 7F820730
+PROGRESS CODE: V03040003 I0
+Loading driver 9E863906-A40F-4875-977F-5B93FF237FC6
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD2440
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E86F000 EntryPoint=0x0007E86F28A TerminalDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD2718
+ProtectUefiImageCommon - 0x7EFD2440
+  - 0x000000007E86F000 - 0x000000000000F7C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E87D6C8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E87D910
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E87D928
+PROGRESS CODE: V03040003 I0
+Loading driver 6B38F7B4-AD98-40E9-9093-ACA2B5A253C4
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD10C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007F809000 EntryPoint=0x0007F80928A DiskIoDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD1C98
+ProtectUefiImageCommon - 0x7EFD10C0
+  - 0x000000007F809000 - 0x0000000000009440
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7F811D48
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7F811E00
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7F811E18
+PROGRESS CODE: V03040003 I0
+Loading driver 1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD1440
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E862000 EntryPoint=0x0007E86228A PartitionDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD0F18
+ProtectUefiImageCommon - 0x7EFD1440
+  - 0x000000007E862000 - 0x000000000000CCC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E86E488
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E86E4D8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E86E4F0
+PROGRESS CODE: V03040003 I0
+Loading driver CD3BAFB6-50FB-4FE8-8E4E-AB74D2C1A600
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFD00C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E85C000 EntryPoint=0x0007E85C28A EnglishDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD0A98
+ProtectUefiImageCommon - 0x7EFD00C0
+  - 0x000000007E85C000 - 0x0000000000005200
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 1D85CD7F-F43D-11D2-9A0C-0090273FC14D 7E860928
+InstallProtocolInterface: A4C751FC-23AE-4C3E-92E9-4964CF63F349 7E860960
+PROGRESS CODE: V03040003 I0
+Loading driver 0167CCC4-D0F7-4F21-A3EF-9E64B7CDCE8B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCF040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E853000 EntryPoint=0x0007E85328A ScsiBus.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFD0598
+ProtectUefiImageCommon - 0x7EFCF040
+  - 0x000000007E853000 - 0x0000000000008C00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E85B588
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E85B5B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E85B5D0
+PROGRESS CODE: V03040003 I0
+Loading driver 0A66E322-3740-4CCE-AD62-BD172CECCA35
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCF9C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E840000 EntryPoint=0x0007E84028A ScsiDisk.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCF898
+ProtectUefiImageCommon - 0x7EFCF9C0
+  - 0x000000007E840000 - 0x0000000000012BC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E852148
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E8521A8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E8521C0
+PROGRESS CODE: V03040003 I0
+Loading driver 961578FE-B6B7-44C3-AF35-6BC705CD2B1F
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCE040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E82E000 EntryPoint=0x0007E82E28A Fat.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCF618
+ProtectUefiImageCommon - 0x7EFCE040
+  - 0x000000007E82E000 - 0x0000000000011F00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E83F508
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E83F538
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E83F550
+PROGRESS CODE: V03040003 I0
+Loading driver 905F13B0-8F91-4B0A-BD76-E1E78F9422E4
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCE3C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E821000 EntryPoint=0x0007E82128A UdfDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCE618
+ProtectUefiImageCommon - 0x7EFCE3C0
+  - 0x000000007E821000 - 0x000000000000C700
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E82CE88
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E82CEC8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E82CEE0
+PROGRESS CODE: V03040003 I0
+Loading driver E4F61863-FE2C-4B56-A8F4-08519BC439DF
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCC040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E813000 EntryPoint=0x0007E81328A VlanConfigDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCCE98
+ProtectUefiImageCommon - 0x7EFCC040
+  - 0x000000007E813000 - 0x000000000000D240
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E81F8B0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E81FB50
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E81FB68
+PROGRESS CODE: V03040003 I0
+Loading driver 025BBFC7-E6A9-4B8B-82AD-6815A1AEAF4A
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCC3C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E7FF000 EntryPoint=0x0007E7FF28A MnpDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCC718
+ProtectUefiImageCommon - 0x7EFCC3C0
+  - 0x000000007E7FF000 - 0x0000000000013140
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E8117C8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E811880
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E811898
+PROGRESS CODE: V03040003 I0
+Loading driver 529D3F93-E8E9-4E73-B1E1-BDF6A9D50113
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCBB40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E7F2000 EntryPoint=0x0007E7F228A ArpDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCB098
+ProtectUefiImageCommon - 0x7EFCBB40
+  - 0x000000007E7F2000 - 0x000000000000C280
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7FDB48
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7FDB78
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7FDB90
+PROGRESS CODE: V03040003 I0
+Loading driver 94734718-0BBC-47FB-96A5-EE7A5AE6A2AD
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCB1C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E7DE000 EntryPoint=0x0007E7DE28A Dhcp4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCB798
+ProtectUefiImageCommon - 0x7EFCB1C0
+  - 0x000000007E7DE000 - 0x0000000000013D00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7F0508
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7F05A0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7F05B8
+PROGRESS CODE: V03040003 I0
+Loading driver 9FB1A1F3-3B71-4324-B39A-745CBB015FFF
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCAC40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E7BC000 EntryPoint=0x0007E7BC28A Ip4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFCA898
+ProtectUefiImageCommon - 0x7EFCAC40
+  - 0x000000007E7BC000 - 0x0000000000021540
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7DC538
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7DC5B0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7DC5C8
+PROGRESS CODE: V03040003 I0
+Loading driver 6D6963AB-906D-4A65-A7CA-BD40E5D6AF2B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFCA3C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E7AA000 EntryPoint=0x0007E7AA28A Udp4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC9F98
+ProtectUefiImageCommon - 0x7EFCA3C0
+  - 0x000000007E7AA000 - 0x00000000000115C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7BAB08
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7BAB48
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7BAB60
+LibGetTime: RtcEpochSeconds non volatile variable was not found - Using compilation time epoch.
+PROGRESS CODE: V03040003 I0
+Loading driver DC3641B8-2FA8-4ED3-BC1F-F9962A03454B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC9140
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E798000 EntryPoint=0x0007E79828A Mtftp4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC9398
+ProtectUefiImageCommon - 0x7EFC9140
+  - 0x000000007E798000 - 0x0000000000011B00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7A90C8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7A9108
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7A9120
+PROGRESS CODE: V03040003 I0
+Loading driver 1A7E4468-2F55-4A56-903C-01265EB7622B
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC9540
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E777000 EntryPoint=0x0007E77728A TcpDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC8F98
+ProtectUefiImageCommon - 0x7EFC9540
+  - 0x000000007E777000 - 0x0000000000020500
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E796380
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7964B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7964D0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7963B0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7964B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7964D0
+PROGRESS CODE: V03040003 I0
+Loading driver B95E9FDA-26DE-48D2-8807-1F9107AC5E3A
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC8240
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E759000 EntryPoint=0x0007E75928A UefiPxeBcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC8718
+ProtectUefiImageCommon - 0x7EFC8240
+  - 0x000000007E759000 - 0x000000000001DF80
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E775ED8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E776010
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E776028
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E775F08
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E776010
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E776028
+PROGRESS CODE: V03040003 I0
+Loading driver 93B80004-9FB3-11D4-9A3A-0090273FC14D
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC70C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E73B000 EntryPoint=0x0007E73B28A PciBusDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC7A98
+ProtectUefiImageCommon - 0x7EFC70C0
+  - 0x000000007E73B000 - 0x000000000001D580
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7575C8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E757610
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E757628
+InstallProtocolInterface: 19CB87AB-2CB9-4665-8360-DDCF6054F79D 7E757608
+PROGRESS CODE: V03040003 I0
+Loading driver 5BE3BDF4-53CF-46A3-A6A9-73C34A6E5EE3
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC6040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E728000 EntryPoint=0x0007E72828A NvmExpressDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC7618
+ProtectUefiImageCommon - 0x7EFC6040
+  - 0x000000007E728000 - 0x0000000000012D00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E739F48
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E739FC0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E739FD8
+InstallProtocolInterface: 5C198761-16A8-4E69-972C-89D67954F81D 7E739F78
+PROGRESS CODE: V03040003 I0
+Loading driver 2FB92EFA-2EE0-4BAE-9EB6-7464125E1EF7
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC69C0
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E71A000 EntryPoint=0x0007E71A28A UhciDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC6718
+ProtectUefiImageCommon - 0x7EFC69C0
+  - 0x000000007E71A000 - 0x000000000000DB40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E727388
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7273B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E7273D0
+PROGRESS CODE: V03040003 I0
+Loading driver BDFE430E-8F2A-4DB0-9991-6F856594777E
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC5040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E709000 EntryPoint=0x0007E70928A EhciDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC5F18
+ProtectUefiImageCommon - 0x7EFC5040
+  - 0x000000007E709000 - 0x0000000000010980
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E7190B8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E7190E8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E719100
+PROGRESS CODE: V03040003 I0
+Loading driver B7F50E91-A759-412C-ADE4-DCD03E7F7C28
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC5440
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E6F0000 EntryPoint=0x0007E6F028A XhciDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC5998
+ProtectUefiImageCommon - 0x7EFC5440
+  - 0x000000007E6F0000 - 0x00000000000186C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E707AD0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E707B70
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E707B88
+PROGRESS CODE: V03040003 I0
+Loading driver 240612B7-A063-11D4-9A3A-0090273FC14D
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC4B40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E6DF000 EntryPoint=0x0007E6DF28A UsbBusDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC4A98
+ProtectUefiImageCommon - 0x7EFC4B40
+  - 0x000000007E6DF000 - 0x0000000000010C40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E6EF2B0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E6EF3A0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E6EF3B8
+PROGRESS CODE: V03040003 I0
+Loading driver 2D2E62CF-9ECF-43B7-8219-94E7FC713DFE
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC4240
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E6D2000 EntryPoint=0x0007E6D228A UsbKbDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC4718
+ProtectUefiImageCommon - 0x7EFC4240
+  - 0x000000007E6D2000 - 0x000000000000CFC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E6DDF88
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E6DE740
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E6DE758
+PROGRESS CODE: V03040003 I0
+Loading driver 9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EFC3B40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E6C7000 EntryPoint=0x0007E6C728A UsbMassStorageDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EFC3A18
+ProtectUefiImageCommon - 0x7EFC3B40
+  - 0x000000007E6C7000 - 0x000000000000AC40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7E6D13E0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7E6D14D0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7E6D14E8
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03041001 I0
+[Bds] Entry...
+[BdsDxe] Locate Variable Policy protocol - Success
+Variable Driver Auto Update Lang, Lang:eng, PlatformLang:en Status: Success
+PROGRESS CODE: V03051005 I0
+[Variable]END_OF_DXE is signaled
+Initialize variable error flag (FF)
+Check gPlatformConsole 0
+CONSOLE_IN variable set VenHw(D3987D4B-971A-435F-8CAF-4967EB627241)/Uart(115200,8,N,1)/VenMsg(E0C14753-F9BE-11D2-9A0C-0090273FC14D) : Success
+CONSOLE_OUT variable set VenHw(D3987D4B-971A-435F-8CAF-4967EB627241)/Uart(115200,8,N,1)/VenMsg(E0C14753-F9BE-11D2-9A0C-0090273FC14D) : Success
+[Bds]RegisterKeyNotify: 000C/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0000/000D 80000000/00 Success
+Terminal - Mode 0, Column = 80, Row = 25
+Terminal - Mode 1, Column = 80, Row = 50
+Terminal - Mode 2, Column = 100, Row = 31
+3hPROGRESS CODE: V01040001 I0
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 7EFA5040
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 7EFA5128
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 7EFA5058
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7EFC2718
+InstallProtocolInterface: D3B36F2C-D551-11D4-9A46-0090273FC14D 0
+InstallProtocolInterface: D3B36F2B-D551-11D4-9A46-0090273FC14D 0
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 7EFA1EA0
+ BlockSize : 512 
+ LastBlock : 0 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Failed to read data, mDwEmmcCommand:A0002351, mDwEmmcArgument:0, Status:Device Error
+MmcIoBlocks(): Failed to transfer block and Status:Device Error
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Failed to read data, mDwEmmcCommand:A0002351, mDwEmmcArgument:0, Status:Device Error
+MmcIoBlocks(): Failed to transfer block and Status:Device Error
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Failed to read data, mDwEmmcCommand:A0002351, mDwEmmcArgument:0, Status:Device Error
+MmcIoBlocks(): Failed to transfer block and Status:Device Error
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 7EFA1620
+ BlockSize : 512 
+ LastBlock : 39B3FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ Valid efi partition table header
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 1000
+ End LBA : 1FFF
+ Partition size: 1000
+ Start : 200000 End : 3FFE00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7EFA1B18
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 7EF90530
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 7EF905E8
+InstallProtocolInterface: 2E54B353-1271-4842-806F-E436D6AF6985 0
+ Index : 1
+ Start LBA : 2000
+ End LBA : 9FFF
+ Partition size: 8000
+ Start : 400000 End : 13FFE00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7EF90A98
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 7EF907B0
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 7EF90868
+InstallProtocolInterface: 5B193300-FC78-40CD-8002-E86C45580B47 0
+ Index : 2
+ Start LBA : A001
+ End LBA : 3C000
+ Partition size: 32000
+ Start : 1400200 End : 7800000
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7EF8AA18
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 7EF8ABB0
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 7EF8AC68
+InstallProtocolInterface: C12A7328-F81F-11D2-BA4B-00A0C93EC93B 0
+Prepare to Free Pool
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 7EFA1820
+ BlockSize : 512 
+ LastBlock : FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 7EF8A1A0
+ BlockSize : 512 
+ LastBlock : 7FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 7EF90120
+ BlockSize : 512 
+ LastBlock : 31FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InstallProtocolInterface: 964E5B22-6459-11D2-8E39-00A0C969723B 7EF8E030
+Installed Fat filesystem on 7EF8A798
+PROGRESS CODE: V02010000 I0
+PCI Bus First Scanning
+PROGRESS CODE: V02011000 I0
+PciBus: Discovered PPB @ [00|00|00]  [VID = 0x1556, DID = 0x1111]
+   BAR[0]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|00|00]  [VID = 0x1556, DID = 0x1111]
+   BAR[0]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciHostBridge: SubmitResources for PcieRoot(0x0)
+ Mem: Granularity/SpecificFlag = 64 / 00
+      Length/Alignment = 0x100000 / 0xFFFFF
+PciBus: HostBridge->SubmitResources() - Success
+PciHostBridge: NotifyPhase (AllocateResources)
+ RootBridge: PcieRoot(0x0)
+  Mem64: Base/Length/Alignment = 980000000/100000/FFFFF - Success
+PciBus: HostBridge->NotifyPhase(AllocateResources) - Success
+PROGRESS CODE: V02011001 I0
+Process Option ROM: BAR Base/Length = 0/0
+PciBus: Resource Map for Root Bridge PcieRoot(0x0)
+Type =  Mem64; Base = 0x980000000;	Length = 0x100000;	Alignment = 0xFFFFF
+   Base = 0x980000000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PPB [00|00|00:10]; Type = PMem64
+
+PciBus: Resource Map for Bridge [00|00|00]
+Type = PMem64; Base = 0x980000000;	Length = 0x4000;	Alignment = 0x3FFF
+
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7EF8DE98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7EF8D028
+InstallProtocolInterface: 30CFE3E7-3DE1-4586-BE20-DEABA1B3B793 0
+[Bds]OsIndication: 0000000000000000
+[Bds]=============Begin Load Options Dumping ...=============
+  Driver Options:
+  SysPrep Options:
+  Boot Options:
+    Boot0000: UiApp 		 0x0109
+    Boot0001: UEFI Shell 		 0x0001
+    Boot0002: UEFI Misc Device 		 0x0001
+    Boot0003: UEFI Misc Device 2 		 0x0001
+  PlatformRecovery Options:
+    PlatformRecovery0000: Default PlatformRecovery 		 0x0001
+[Bds]=============End Load Options Dumping=============
+[Bds]BdsWait ...Zzzzzzzzzzzz...
+[Bds]Exit the waiting!
+PROGRESS CODE: V03051007 I0
+[Bds]Stop Hotkey Service!
+[Bds]UnregisterKeyNotify: 000C/0000 Success
+[Bds]UnregisterKeyNotify: 0000/000D Success
+PROGRESS CODE: V03051001 I0
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  0A    00000004  00000000  00000004
+  09    00000008  00000000  00000008
+  00    00000004  00000000  00000004
+  06    00000024  00000075  00000092
+  05    00000030  00000068  00000082
+  03    00000180  00000335  00000402
+  04    00000F00  00000D14  00000F00
+Memory Type Information settings change.
+[Bds]Booting UEFI Shell
+[Bds] Expand MemoryMapped(0xB,0x7FA4A000,0x7FFA9FFF)/FvFile(7C04A583-9E3E-4F1C-AD65-E05268D0B4D1) -> MemoryMapped(0xB,0x7FA4A000,0x7FFA9FFF)/FvFile(7C04A583-9E3E-4F1C-AD65-E05268D0B4D1)
+PROGRESS CODE: V03058000 I0
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EF8CD40
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E479000 EntryPoint=0x0007E479240 Shell.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EF8FD98
+ProtectUefiImageCommon - 0x7EF8CD40
+  - 0x000000007E479000 - 0x0000000000123E80
+PROGRESS CODE: V03058001 I0
+[HiiDatabase]: Memory allocation is required after ReadyToBoot, which may change memory map and cause S4 resume issue.
+[HiiDatabase]: Memory allocation is required after ReadyToBoot, which may change memory map and cause S4 resume issue.
+[HiiDatabase]: Memory allocation is required after ReadyToBoot, which may change memory map and cause S4 resume issue.
+[HiiDatabase]: Memory allocation is required after ReadyToBoot, which may change memory map and cause S4 resume issue.
+[HiiDatabase]: Memory allocation is required after ReadyToBoot, which may change memory map and cause S4 resume issue.
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 7E9C6120
+InstallProtocolInterface: 752F3136-4E16-4FDC-A22A-E5F46812F4CA 7E9C6218
+InstallProtocolInterface: 6302D008-7F9B-4F30-87AC-60C9FEF5DA4E 7E534190
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.70 (EDK II, 0x00010000)
+Mapping table
+      FS0: Alias(s):HD1d:;BLK4:
+          VenHw(B549F005-4BD4-4020-A0CB-06F5478A68C3)/HD(3,GPT,97B147C4-8CCD-4B82-85D8-9BAF0476F81C,0xA001,0x32000)
+     BLK0: Alias(s):
+          VenHw(B549F005-4BD4-4020-A0CB-06F42BDA68C3)
+     BLK1: Alias(s):
+          VenHw(B549F005-4BD4-4020-A0CB-06F5478A68C3)
+     BLK2: Alias(s):
+          VenHw(B549F005-4BD4-4020-A0CB-06F5478A68C3)/HD(1,GPT,3875EA9C-BBD5-435D-AC6C-9B61F5134D80,0x1000,0x1000)
+     BLK3: Alias(s):
+          VenHw(B549F005-4BD4-4020-A0CB-06F5478A68C3)/HD(2,GPT,575563E6-285D-4835-812A-07A0AC5FCA73,0x2000,0x8000)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.Press ESC in 4 seconds to skip startup.nsh or any other key to continue.Press ESC in 3 seconds to skip startup.nsh or any other key to continue.Press ESC in 2 seconds to skip startup.nsh or any other key to continue.Press ESC in 1 seconds to skip startup.nsh or any other key to continue.
+Shell> exit
+Image Return Status = Success
+[Bds] Booting Boot Manager Menu.
+[Bds]Stop Hotkey Service!
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  0A    00000004  00000000  00000004
+  09    00000008  00000000  00000008
+  00    00000004  00000000  00000004
+  06    00000024  000000D6  0000010B
+  05    00000030  00000068  00000082
+  03    00000180  00000335  00000402
+  04    00000F00  00000F5E  00001335
+Memory Type Information settings change.
+[Bds]Booting UiApp
+[Bds] Expand MemoryMapped(0xB,0x7FA4A000,0x7FFA9FFF)/FvFile(462CAA21-7614-4503-836E-8AB6F4662331) -> MemoryMapped(0xB,0x7FA4A000,0x7FFA9FFF)/FvFile(462CAA21-7614-4503-836E-8AB6F4662331)
+PROGRESS CODE: V03058000 I0
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7EF8B040
+InvalidateInstructionCacheRange:RISC-V unsupported function.
+Loading driver at 0x0007E647000 EntryPoint=0x0007E647240 UiApp.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7EF8CF98
+ProtectUefiImageCommon - 0x7EF8B040
+  - 0x000000007E647000 - 0x0000000000018340
+PROGRESS CODE: V03058001 I0
+PROGRESS CODE: V03050007 I0
+ BlockSize : 512 
+ LastBlock : 0 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Failed to read data, mDwEmmcCommand:A0002351, mDwEmmcArgument:0, Status:Device Error
+MmcIoBlocks(): Failed to transfer block and Status:Device Error
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Failed to read data, mDwEmmcCommand:A0002351, mDwEmmcArgument:0, Status:Device Error
+MmcIoBlocks(): Failed to transfer block and Status:Device Error
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+Failed to read data, mDwEmmcCommand:A0002351, mDwEmmcArgument:0, Status:Device Error
+MmcIoBlocks(): Failed to transfer block and Status:Device Error
+ BlockSize : 512 
+ LastBlock : 39B3FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ Valid efi partition table header
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 1000
+ End LBA : 1FFF
+ Partition size: 1000
+ Start : 200000 End : 3FFE00
+ Index : 1
+ Start LBA : 2000
+ End LBA : 9FFF
+ Partition size: 8000
+ Start : 400000 End : 13FFE00
+ Index : 2
+ Start LBA : A001
+ End LBA : 3C000
+ Partition size: 32000
+ Start : 1400200 End : 7800000
+Prepare to Free Pool
+ BlockSize : 512 
+ LastBlock : FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ BlockSize : 512 
+ LastBlock : 7FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+PROGRESS CODE: V02010000 I0
+ BlockSize : 512 
+ LastBlock : FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+ BlockSize : 512 
+ LastBlock : 7FFF 
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InvalidateDataCacheRange:RISC-V unsupported function.
+WriteBackDataCacheRange:RISC-V unsupported function.
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7E65D8C8
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 7E65D8B0
+PROGRESS CODE: V03050006 I0
+InstallProtocolInterface: 348C4D62-BFBD-4882-9ECE-C80BB1C4783B 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                0 MB RAM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <Standard English>            Select Language                                                                                                                                 Continue                                                 Reset                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^v=Move Highlight                               <Enter>=Select Entry      This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                     <Standard English>            Select Language                                                                                            ^v=Move Highlight       <Enter>=Select Entry                                 Continue                                              Continue                                                                                                                                                                                                                                                                                   Continue                                                                                                                              ^v=Move Highlight       <Enter>=Select Entry                                 Reset                                                 Reset                                                                                                                                                                                                                                                                                  Reset                                                                                                                                 ^v=Move Highlight                               <Enter>=Select Entry      <Standard English>            Select Language            This is the option     one adjusts to change  the language for the   current system                                                                                                                                                                                                 

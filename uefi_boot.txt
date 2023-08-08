@@ -1,7 +1,3 @@
-target remote :3333
-set directories ../edk2/
-set $pc=0x40000000
-
 add-symbol-file ../edk2/Build/JH7110/DEBUG_GCC5/RISCV64//DxeCore.debug 0x7fa0b240
 add-symbol-file ../edk2/Build/JH7110/DEBUG_GCC5/RISCV64//PcdPeim.debug 0x4041e240
 add-symbol-file ../edk2/Build/JH7110/DEBUG_GCC5/RISCV64//PlatformPei.debug 0x40438240

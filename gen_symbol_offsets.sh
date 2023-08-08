@@ -1,6 +1,6 @@
 #!/bin/bash
 LOG="./debug.log"
-BUILD="../edk2-staging/Build/RiscVVirtQemu/DEBUG_GCC5/RISCV64/"
+BUILD="../edk2/Build/JH7110/DEBUG_GCC5/RISCV64/"
 PEINFO="peinfo/peinfo"
 
 cat ${LOG} | grep Loading | grep -i DxeCore | while read LINE; do
